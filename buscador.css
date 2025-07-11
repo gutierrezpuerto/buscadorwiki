@@ -81,3 +81,24 @@ footer{
     padding: 15px;
     font-size: 0.9em;
 }
+
+
+/*------- CSS de C++ -----------*/
+
+#primer_info{
+    margin: auto 25%;
+    padding: 20px;
+    background-color: #241e24f1;
+    border-radius: 10px;
+
+}
+
+.primer_info_P{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
+
