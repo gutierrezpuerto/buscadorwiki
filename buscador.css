@@ -83,12 +83,38 @@ footer{
 }
 
 
-/*------- CSS de C++ -----------*/
+/*----------------------------- CSS de C++ ----------------------------------*/
 
-#primer_info{
-    margin: auto 25%;
+/*----primer  DIV --------*/
+
+#cont_de_primer_info{
+    display: flex;
+    height: auto;
+}
+
+.colum {
+    flex: 1; /* que las columnas ocupen el mismo ancho */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: #1d1a1a;
+
+}
+
+.right {
+    background-color: #1d1a1a;
+
+}
+
+
+.center{
+    flex: 2; /* la columna del centro ocupa el doble de espacio */
+    margin: auto auto;
     padding: 20px;
-    background-color: #241e24f1;
     border-radius: 10px;
 
 }
@@ -98,7 +124,7 @@ footer{
     margin-bottom: 16px;
     font-size: 1.1em;
     line-height: 1.5;
-    color: #f0f0f0;
+
 }
 
 
