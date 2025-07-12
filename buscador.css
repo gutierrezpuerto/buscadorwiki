@@ -97,27 +97,42 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    box-sizing: border-box;
-}
-
-.left {
-    background-color: #1d1a1a;
 
 }
 
-.right {
-    background-color: #1d1a1a;
-
-}
-
-
-.center{
-    flex: 2; /* la columna del centro ocupa el doble de espacio */
-    margin: auto auto;
+ .colum.left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh; /* 100% del alto de la ventana */
+    background-color: #f4f4f4;
     padding: 20px;
-    border-radius: 10px;
+    overflow-y: auto; /* Por si la lista crece */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
 
+  .colum.center {
+    margin-left: 220px; /* Espacio suficiente para que no se solape con el índice */
+    padding: 20px;
+    flex: 1;
+  }
+
+  .colum.right {
+    padding: 20px;
+  }
+
+
+
+.imagencpp {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
+
+
+
 
 .primer_info_P{
     margin-top: 8px;
@@ -127,4 +142,7 @@ footer{
 
 }
 
-
+#cont_segunda_info{
+    margin-left: 220px;
+    padding: 20px;
+}
