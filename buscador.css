@@ -156,3 +156,22 @@ footer{
     margin-right: 220px;
     padding:10px 20px;
 }
+
+
+/*----------------------------- CSS de CSS ----------------------------------*/
+
+
+.imagencss {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#tipos_de_selectores li {
+    display: list-item;
+}
+
+#tipos_de_selectores ul{
+    margin-left: 20px;
+}
