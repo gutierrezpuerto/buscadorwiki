@@ -13,7 +13,7 @@
     <title>C++</title>
 </head>
 <body>
-    <header>
+    <header id="introducción">
         <nav>
         <ul>
             <li><a href="temas/Html.html">HTML</a></li>
@@ -24,8 +24,7 @@
     </nav>
     </header>
     
-    <div>
-
+    <div id="infocpp">
 
         <div id="cont_de_primer_info">
             <div class="colum left">
@@ -33,18 +32,19 @@
                     <li><a href="#introducción" >Introducción</a></li>
                     <li><a href="#caracteristicas" >Caracteristicas</a></li>
                     <li><a href="#tipos_de_datos" >Tipos de datos</a></li>
-                    <li><a href="https://www.programiz.com/cpp-programming" >Programiz</a></li>
+                    <li><a href="#principios" >Principios</a></li>
                 </ul>
             </div>
 
-            <div id="introducción" class="colum center" >
-                <p class="primer_info_P">C++ es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C y añadir mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido.</p>
+            <div class="colum center" >
+                <h2>Introducción</h2>
+                <p class="primer_info_P">C++ es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C y añadir mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido.</p><br>
 
-                <p class="primer_info_P">Posteriormente se añadieron facilidades de programación genérica, que se sumaron a los paradigmas de programación estructurada y programación orientada a objetos. Por esto se suele decir que el C++ es un lenguaje de programación multiparadigma.</p>
+                <p class="primer_info_P">Posteriormente se añadieron facilidades de programación genérica, que se sumaron a los paradigmas de programación estructurada y programación orientada a objetos. Por esto se suele decir que el C++ es un lenguaje de programación multiparadigma.</p><br>
 
-                <p class="primer_info_P">Actualmente existe un estándar, denominado ISO C++, al que se han adherido la mayoría de los fabricantes de compiladores más modernos. Existen también algunos intérpretes, tales como ROOT.</p>
+                <p class="primer_info_P">Actualmente existe un estándar, denominado ISO C++, al que se han adherido la mayoría de los fabricantes de compiladores más modernos. Existen también algunos intérpretes, tales como ROOT.</p><br>
 
-                <p class="primer_info_P">El nombre «C++» fue propuesto por Rick Mascitti en el año 1983, cuando el lenguaje fue utilizado por primera vez fuera de un laboratorio científico. Antes se había usado el nombre «C con clases». En C++, la expresión «C++» significa «incremento de C» y se refiere a que C++ es una extensión de C.</p>
+                <p class="primer_info_P">El nombre «C++» fue propuesto por Rick Mascitti en el año 1983, cuando el lenguaje fue utilizado por primera vez fuera de un laboratorio científico. Antes se había usado el nombre «C con clases». En C++, la expresión «C++» significa «incremento de C» y se refiere a que C++ es una extensión de C.</p><br>
 
                 <ul id="caracteristicas">
                     <h2>Caracteristicas de C++</h2>
@@ -67,21 +67,36 @@
 
         </div>
 
-        <div id="cont_segunda_info">
+        <div id="cont_segunda_info" class="espacio">
             <ul id="tipos_de_datos">
                 <h2>Tipos de datos</h2>
                 <p>C++ tiene los siguientes tipos fundamentales:</p>
-                <li>Caracteres: char (también es un entero), wchar_t</li>
-                <li>Enteros: short, int, long, long long</li>
-                <li>Números en coma flotante: float, double, long double</li>
-                <li>Booleanos: bool</li>
-                <li>Vacío: void</li>
-                
+                <li>Caracteres: <b>char</b>  (también es un entero), <b>wchar_t</b></li>
+                <li>Enteros: <b>short, int, long, long long</b></li>
+                <li>Números en coma flotante: <b>float, double, long double</b></li>
+                <li>Booleanos: <b>bool</b></li>
+                <li>Vacío: <b>void</b></li>
             </ul>
-        </div >
-        
-        
 
+        </div>
+        <br>
+
+        <div id="cont_tercera_info" class="espacio">
+            <h2 id="principios">Principios</h2>
+            <p>Todo programa en C++ debe tener la función principal main() (a no ser que se especifique en tiempo de compilación otro punto de entrada, que en realidad es la función que tiene el main())</p>
+
+            <p>La función principal del código fuente main debe tener uno de los siguientes prototipos: </p>
+            <p><b>int main()</b></p>
+            <p><b>int main(int argc, char** argv)</b></p>
+            <p>Aunque no es estándar algunas implementaciones permiten</p>
+            <p><b>int main(int argc, char** argv, char** env)</b></p>
+            <br>
+            
+            <p>La primera es la forma por omisión de un programa que no recibe parámetros ni argumentos. La segunda forma tiene dos parámetros: argc, un número que describe el número de argumentos del programa (incluyendo el nombre del programa mismo), y argv, un puntero a un array de punteros, de argc elementos, donde el elemento argv[i] representa el i-ésimo argumento entregado al programa. En el tercer caso se añade la posibilidad de poder acceder a las variables de entorno de ejecución de la misma forma que se accede a los argumentos del programa, pero reflejados sobre la variable env.</p>
+            <br>
+
+            <p>El tipo de retorno de main es un valor entero <b>int</b>. Al finalizar la función main, debe incluirse el valor de retorno (por ejemplo, return 0;, aunque el estándar prevé solamente dos posibles valores de retorno: EXIT_SUCCESS y EXIT_FAILURE, definidas en el archivo cstdlib), o salir por medio de la función exit. Alternativamente puede dejarse en blanco, en cuyo caso el compilador es responsable de agregar la salida adecuada.</p>
+        </div>
         
     
     </div>

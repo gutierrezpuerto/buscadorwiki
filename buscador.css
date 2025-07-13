@@ -87,6 +87,13 @@ footer{
 
 /*----primer  DIV --------*/
 
+#infocpp{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 18px;
+
+}
+
 #cont_de_primer_info{
     display: flex;
     height: auto;
@@ -96,7 +103,6 @@ footer{
     flex: 1; /* que las columnas ocupen el mismo ancho */
     justify-content: center;
     align-items: center;
-    padding: 10px;
 
 }
 
@@ -107,19 +113,26 @@ footer{
     width: 200px;
     height: 100vh; /* 100% del alto de la ventana */
     background-color: #f4f4f4;
-    padding: 20px;
+    padding:20px;
     overflow-y: auto; /* Por si la lista crece */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   }
 
+.left ul{
+    margin-top: 100px;
+    padding: auto;
+}
+
   .colum.center {
     margin-left: 220px; /* Espacio suficiente para que no se solape con el índice */
-    padding: 20px;
+    padding: 10px 20px;
     flex: 1;
   }
 
+
+
   .colum.right {
-    padding: 20px;
+    padding: 10px 20px;
   }
 
 
@@ -128,21 +141,18 @@ footer{
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
 
-
-.primer_info_P{
-    margin-top: 8px;
-    margin-bottom: 16px;
-    font-size: 1.1em;
-    line-height: 1.5;
-
+.espacio{
+    margin-left: 220px;
+    margin-right: 220px;
 }
 
 #cont_segunda_info{
-    margin-left: 220px;
-    padding: 20px;
+
+    margin-right: 220px;
+    padding:10px 20px;
 }
