@@ -22,9 +22,17 @@ body{
     margin: 0;
 }
 header{
-    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     font-size: 2em;
+    background-color: white; 
+    padding: 10px; 
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); 
+
 }
+
 nav ul{
     list-style: none;
     display: flex;
@@ -54,11 +62,13 @@ nav a:hover{
     display: block;
 }
 /*-------Contenido ---------------*/
-main{
+
+main {
+    margin: 250px auto 40px; /* 100px de margen superior para que no lo tape el header */
     max-width: var(--max-ancho);
-    margin: 40px auto;
     padding: 0 20px;
 }
+
 
 section.introduccion {
     text-align: center;
@@ -83,12 +93,15 @@ footer{
 }
 
 
-/*----------------------------- CSS de C++ ----------------------------------*/
+/*----------------------------- Formato de paginas (CSS, C++, HTML, JAVA, PRACTICAS Y ALGEBRA) ----------------------------------*/
 
-/*----primer  DIV --------*/
+html {
+  scroll-padding-top: 100px; /* ajustá según la altura de tu header */
+}
 
-#infocpp{
-    margin-top: 8px;
+
+#info{
+    margin-top: 90px;
     margin-bottom: 16px;
     font-size: 18px;
 
