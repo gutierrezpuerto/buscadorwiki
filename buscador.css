@@ -19,7 +19,7 @@ body{
     color: var(--texto);
     line-height: 1.6;
     padding: 0;
-    margin: 0;
+    margin-top: 150px;
 }
 header{
     position: fixed;
@@ -27,7 +27,7 @@ header{
     left: 0;
     width: 100%;
     font-size: 2em;
-    background-color: white; 
+    background-color: rgb(255, 255, 255); 
     padding: 10px; 
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); 
 
@@ -42,13 +42,12 @@ nav ul{
     margin-bottom: 15px;
 }
 nav a{
-    color: var(--color-acento);
     text-decoration: none;
     font-weight: bold;
 }
 nav a:hover{
     text-decoration: underline;
-    text-shadow: 1px 2px rgb(18, 18, 73);
+    text-shadow: 1px 2px rgb(255, 255, 255);
 }
 /*-------Buscador------------*/
 #buscador{
@@ -64,7 +63,7 @@ nav a:hover{
 /*-------Contenido ---------------*/
 
 main {
-    margin: 250px auto 40px; /* 100px de margen superior para que no lo tape el header */
+    margin: 320px auto 40px; /* 100px de margen superior para que no lo tape el header */
     max-width: var(--max-ancho);
     padding: 0 20px;
 }
@@ -93,15 +92,14 @@ footer{
 }
 
 
-/*----------------------------- Formato de paginas (CSS, C++, HTML, JAVA, PRACTICAS Y ALGEBRA) ----------------------------------*/
+/*----------------------------- Formato de paginas (CSS, C++, HTML, JAVA, PRACTICAS Y SISTEMAS) ----------------------------------*/
 
 html {
-  scroll-padding-top: 100px; /* ajustá según la altura de tu header */
+  scroll-padding-top: 160px; /* ajustes para que la información no quede debajo del header*/
 }
 
 
 #info{
-    margin-top: 90px;
     margin-bottom: 16px;
     font-size: 18px;
 
@@ -119,42 +117,41 @@ html {
 
 }
 
- .colum.left {
+.colum.left {
     position: fixed;
     top: 0;
     left: 0;
     width: 200px;
     height: 100vh; /* 100% del alto de la ventana */
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding:20px;
     overflow-y: auto; /* Por si la lista crece */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  }
+}
 
 .left ul{
     margin-top: 100px;
     padding: auto;
 }
 
-  .colum.center {
+.colum.center {
     margin-left: 220px; /* Espacio suficiente para que no se solape con el índice */
     padding: 10px 20px;
     flex: 1;
-  }
+}
 
 
 
-  .colum.right {
+.colum.right {
     padding: 10px 20px;
-  }
+}
 
-
-
-.imagencpp {
+.colum.right img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+    border: 1px solid #000;
 }
 
 
@@ -188,3 +185,12 @@ html {
 #tipos_de_selectores ul{
     margin-left: 20px;
 }
+
+/*----------------------------- CSS de PRACTICAS ----------------------------------*/
+
+#practicas {
+    margin-top: 160px;
+    text-align: center;
+    
+}
+
